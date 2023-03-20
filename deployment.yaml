@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodeweb-deployment
+  labels:
+    app: nodeweb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodeweb
+  template:
+    metadata:
+      name: nodeweb
+      labels:
+        app: nodeweb
+    spec:
+      containers:
+      - name: nodeweb-container
+        image: palakollu145/helloworld:blue
+        ports:
+          - containerPort: 5000
