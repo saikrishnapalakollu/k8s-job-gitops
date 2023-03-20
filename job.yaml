@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: sleep
-        image: palakollu145/helloworld:red
+        image: palakollu145/helloworld:green
         command: ["sleep", "10"]
       restartPolicy: Never
   backoffLimit: 0
