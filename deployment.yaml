@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nodeweb-container
-        image: palakollu145/helloworld:blue
+        image: palakollu145/helloworld:green
         ports:
           - containerPort: 5000
