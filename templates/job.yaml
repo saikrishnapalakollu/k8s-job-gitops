@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
       - name: sleep
-        image: {{ .Values.repository }}/{{ .Values.image }}:{{ .Values.tag }}
+        image: palakollu145/hello-world:{{ .Values.tag }}
         command: ["sleep", "10"]
       restartPolicy: Never
   backoffLimit: 0
