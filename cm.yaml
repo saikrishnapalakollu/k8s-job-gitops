@@ -1,22 +1,6 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+data:
+  aws_region: ap-south-1
+kind: ConfigMap
 metadata:
-  name: nodeweb-deployment
-  labels:
-    app: nodeweb
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: nodeweb
-  template:
-    metadata:
-      name: nodeweb
-      labels:
-        app: nodeweb
-    spec:
-      containers:
-      - name: nodeweb-container
-        image: palakollu145/helloworld:green
-        ports:
-          - containerPort: 5000
+  name: git-ops-job-support
