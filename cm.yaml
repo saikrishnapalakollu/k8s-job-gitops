@@ -1,6 +1,0 @@
-apiVersion: v1
-data:
-  aws_region: ap-south-1
-kind: ConfigMap
-metadata:
-  name: git-ops-job-support

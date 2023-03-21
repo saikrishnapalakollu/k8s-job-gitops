@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  aws_region: ap-south-1
+kind: ConfigMap
+metadata:
+  {{- range $k, $v := .Values }}
+  {{ $k }}: {{ $v | quote}}
+  {{- end }}
