@@ -9,5 +9,6 @@ spec:
       containers:
       - name: sleep
         image: {{ .Values.repository}}/{{ .Values.image }}:{{ .Values.tag }}
+        command: ["/bin/sh","sleep", "30"]
       restartPolicy: Never
   backoffLimit: 0
