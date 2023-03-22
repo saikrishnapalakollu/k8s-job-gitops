@@ -8,7 +8,8 @@ spec:
     spec:
       containers:
       - name: sleep
-        image: perl:5.34.0
-        command: [ "sleep 30","perl",  "-Mbignum=bpi", "-wle", "print bpi({{ .Values.decimal }})"]
+        image: palakollu145/helloworld:blue
+        command: ["sleep 30"]
+        # command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi({{ .Values.decimal }})"]
       restartPolicy: Never
   backoffLimit: 0
