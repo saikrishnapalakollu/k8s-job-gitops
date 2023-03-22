@@ -1,3 +1,4 @@
 repository: palakollu145
-image: helloworld
-tag: red
+image: pie
+tag: 5.34.0
+decimal: 2

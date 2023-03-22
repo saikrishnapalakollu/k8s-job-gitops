@@ -9,6 +9,6 @@ spec:
       containers:
       - name: sleep
         image: {{ .Values.repository}}/{{ .Values.image }}:{{ .Values.tag }}
-        command: ["/bin/bash","sleep", "30"]
+        command: ["perl",  "-Mbignum=bpi", "-wle", "print bpi({{ .Values.decimal }})"]
       restartPolicy: Never
   backoffLimit: 0
