@@ -2,7 +2,7 @@ jobs:
   - name: first-job
     repository: palakollu145
     image: helloworld
-    tag: green
+    tag: blue
   - name: second-job
     repository: palakollu145
     image: helloworld
