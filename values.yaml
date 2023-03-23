@@ -6,4 +6,4 @@ jobs:
   - name: second-job
     repository: palakollu145
     image: helloworld
-    tag: blue
+    tag: green
