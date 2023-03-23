@@ -1,9 +1,9 @@
 jobs: 
-  - name: green-job
+  - name: first-job
     repository: palakollu145
     image: helloworld
     tag: green
-  - name: blue-job
-    repository: palakollu145
-    image: helloworld
-    tag: blue
+  # - name: second-job
+  #   repository: palakollu145
+  #   image: helloworld
+  #   tag: blue
