@@ -1,3 +1,9 @@
-repository: palakollu145
-image: helloworld
-tag: green
+jobs: 
+  - name: green-job
+    repository: palakollu145
+    image: helloworld
+    tag: green
+  # - name: blue-job
+  #   repository: palakollu145
+  #   image: helloworld
+  #   tag: blue

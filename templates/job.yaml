@@ -1,7 +1,9 @@
+{{- range .Values.jobs }}
+---
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: gitops-{{ randAlphaNum 8 | lower }}
+  name: {{ .name }}-{{ randAlphaNum 8 | lower }}
   annotations:
 spec:
   template:
@@ -9,7 +11,8 @@ spec:
       terminationGracePeriodSeconds: 60
       containers:
       - name: sleep
-        image: {{ .Values.repository}}/{{ .Values.image }}:{{ .Values.tag }}
+        image: {{ .repository}}/{{ .image }}:{{ .tag }}
         command: ["sleep", "60"]
       restartPolicy: Never
   backoffLimit: 0
+{{- end }}
