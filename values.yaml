@@ -3,7 +3,7 @@ jobs:
     repository: palakollu145
     image: helloworld
     tag: green
-  # - name: second-job
-  #   repository: palakollu145
-  #   image: helloworld
-  #   tag: blue
+  - name: second-job
+    repository: palakollu145
+    image: helloworld
+    tag: blue
